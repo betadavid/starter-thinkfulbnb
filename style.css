@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -56,12 +56,25 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  padding: 10px 10px;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+header nav ul{
+  display: flex;
+  padding-left: 0;
+
+}
+
+header nav {
+  display: flex;
+  margin: 0;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -72,6 +85,10 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
 }
 
 header nav ul li a:hover {
@@ -87,6 +104,12 @@ form {
 
 form label {
   font-weight: bold;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
 }
 
 form select,
@@ -117,3 +140,30 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 48px;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    align-content: center;
+  }
+
+  form div {
+    flex-direction: column;
+    padding-right: 50px;
+    justify-content: space-between;
+  }
+
+}
