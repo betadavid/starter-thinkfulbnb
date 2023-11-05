@@ -100,6 +100,7 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  margin: auto;
 }
 
 form label {
@@ -158,12 +159,15 @@ footer p {
   form {
     display: flex;
     align-content: center;
+    justify-content: space-between;
+    width: 80%;
+    align-self: center;
+    flex-wrap: wrap;
   }
 
   form div {
     flex-direction: column;
-    padding-right: 50px;
-    justify-content: space-between;
   }
 
 }
+
