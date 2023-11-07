@@ -73,7 +73,7 @@ header nav ul{
 
 header nav {
   display: flex;
-  margin: 0;
+  margin: auto;
   justify-content: center;
 }
 
@@ -89,6 +89,7 @@ header nav ul li a {
 
 header nav ul li:last-child a {
   margin-right: 0;
+  padding-right: 0;
 }
 
 header nav ul li a:hover {
@@ -145,6 +146,7 @@ footer p {
     display: flex;
     justify-content: space-between;
   }
+
 
   .logo {
     font-size: 48px;
